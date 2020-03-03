@@ -14,6 +14,8 @@
 ga('create', 'UA-18358274-1', 'auto');
 ga('send', 'pageview');
 
+
+
 // Send custom GA events
 $(document).ready(function () {
     $('a, button').click(function () {
@@ -23,4 +25,8 @@ $(document).ready(function () {
             ga('send', 'event', 'shwu-ss', id);
         }
     });
+    $('.hidden-ta').css("opacity", 0);
+    $('.hidden-ta').click(function() {
+        $(this).css("opacity", 1);
+    })
 });
