@@ -210,7 +210,7 @@ fun <T> flowOf(vararg elements: T): Flow<T>
 Creates a flow that produces values from the specified **`vararg`**-arguments.
 
 ---
-## Example of `asFlow()`
+## Example of `flowOf()`
 ```kotlin
 fun main() = runBlocking {
     val f = flowOf(1, 2, 3)
@@ -226,7 +226,7 @@ fun main() = runBlocking {
 ```
 
 ---
-## Result of `asFlow()`
+## Result of `flowOf()`
 ```kotlin
 1. Start to collect
 Collected 1
