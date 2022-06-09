@@ -13093,7 +13093,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="n">kaggle</span>
@@ -13113,7 +13113,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span><span class="p">,</span> <span class="n">files</span>
@@ -13162,7 +13162,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13215,9 +13215,9 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea ">
 
-     <input type="file" id="files-e2b7c3b9-33b4-42e8-81c8-ac1d286c4890" name="files[]" multiple disabled
+     <input type="file" id="files-b96dbb6b-edf5-45c8-8d8d-ee50d6c37ae7" name="files[]" multiple disabled
         style="border:none" />
-     <output id="result-e2b7c3b9-33b4-42e8-81c8-ac1d286c4890">
+     <output id="result-b96dbb6b-edf5-45c8-8d8d-ee50d6c37ae7">
       Upload widget is only available when the cell has been executed in the
       current browser session. Please rerun this cell to enable.
       </output>
@@ -13254,7 +13254,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Download data from Kaggle and create a DataFrame.</span>
@@ -13263,7 +13263,6 @@ div#notebook {
     <span class="n">name</span> <span class="o">=</span> <span class="n">zip_ref</span><span class="o">.</span><span class="n">namelist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">with</span> <span class="n">zip_ref</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="k">as</span> <span class="n">zf</span><span class="p">:</span>
       <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">zf</span><span class="p">)</span>
-
 
 <span class="c1"># The data does not come with a validation set so we&#39;ll create one from the</span>
 <span class="c1"># training set.</span>
@@ -13323,10 +13322,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">test_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">test_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13339,13 +13338,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-ff903111-cdd2-4d5a-a83d-a73ae2e16fef">
+  <div id="df-f372fad3-a4ad-430a-a5af-d94c183be365">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13371,29 +13370,34 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>count</th>
-      <td>153164</td>
-      <td>153164</td>
-    </tr>
-    <tr>
-      <th>unique</th>
-      <td>153164</td>
-      <td>153164</td>
-    </tr>
-    <tr>
-      <th>top</th>
+      <th>0</th>
       <td>00001cee341fdb12</td>
       <td>Yo bitch Ja Rule is more succesful then you'll...</td>
     </tr>
     <tr>
-      <th>freq</th>
-      <td>1</td>
-      <td>1</td>
+      <th>1</th>
+      <td>0000247867823ef7</td>
+      <td>== From RfC == \n\n The title is fine as it is...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>00013b17ad220c46</td>
+      <td>" \n\n == Sources == \n\n * Zawe Ashton on Lap...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>00017563c3f7919a</td>
+      <td>:If you have a look back at the source, the in...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>00017695ad8997eb</td>
+      <td>I don't anonymously edit articles at all.</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-ff903111-cdd2-4d5a-a83d-a73ae2e16fef')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f372fad3-a4ad-430a-a5af-d94c183be365')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13444,12 +13448,12 @@ div#notebook {
 
       <script>
         const buttonEl =
-          document.querySelector('#df-ff903111-cdd2-4d5a-a83d-a73ae2e16fef button.colab-df-convert');
+          document.querySelector('#df-f372fad3-a4ad-430a-a5af-d94c183be365 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-ff903111-cdd2-4d5a-a83d-a73ae2e16fef');
+          const element = document.querySelector('#df-f372fad3-a4ad-430a-a5af-d94c183be365');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -13479,10 +13483,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">train_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">train_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13495,13 +13499,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-4b0a8c58-eeb7-4f33-842e-fee35093ee89">
+  <div id="df-4980644e-0823-4adf-9919-1ab261f3a327">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13521,6 +13525,8 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>id</th>
+      <th>comment_text</th>
       <th>toxic</th>
       <th>severe_toxic</th>
       <th>obscene</th>
@@ -13531,81 +13537,64 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>count</th>
-      <td>111699.000000</td>
-      <td>111699.000000</td>
-      <td>111699.000000</td>
-      <td>111699.000000</td>
-      <td>111699.000000</td>
-      <td>111699.000000</td>
+      <th>104158</th>
+      <td>2d59e577d6d081da</td>
+      <td>Actually you know what, I'm not using this acc...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>mean</th>
-      <td>0.095820</td>
-      <td>0.009937</td>
-      <td>0.053017</td>
-      <td>0.003107</td>
-      <td>0.049374</td>
-      <td>0.008729</td>
+      <th>81146</th>
+      <td>d90eed2c03efb2b0</td>
+      <td>"\n\nThe problem with this disambig is, Michae...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>std</th>
-      <td>0.294346</td>
-      <td>0.099191</td>
-      <td>0.224069</td>
-      <td>0.055650</td>
-      <td>0.216648</td>
-      <td>0.093020</td>
+      <th>6248</th>
+      <td>10af179019d6d9b8</td>
+      <td>"\n\nLegalleft, I just guess sarcasm is not on...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>min</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <th>36126</th>
+      <td>6088014ca4f31017</td>
+      <td>Please note that you have no right to free spe...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>25%</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
+      <th>70143</th>
+      <td>bb9fc7e55e51f62f</td>
+      <td>"\n\nBoba Phat at AFD again\nAn AFD you partic...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4b0a8c58-eeb7-4f33-842e-fee35093ee89')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4980644e-0823-4adf-9919-1ab261f3a327')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13656,12 +13645,12 @@ div#notebook {
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4b0a8c58-eeb7-4f33-842e-fee35093ee89 button.colab-df-convert');
+          document.querySelector('#df-4980644e-0823-4adf-9919-1ab261f3a327 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4b0a8c58-eeb7-4f33-842e-fee35093ee89');
+          const element = document.querySelector('#df-4980644e-0823-4adf-9919-1ab261f3a327');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -13698,7 +13687,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">graph_df</span> <span class="o">=</span> <span class="n">train_df</span><span class="p">[</span><span class="s1">&#39;toxic&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>\
@@ -13721,13 +13710,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f30439cabd0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7ff8b610fa10&gt;</pre>
 </div>
 
 </div>
@@ -13764,7 +13753,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">x_train</span> <span class="o">=</span> <span class="n">train_df</span><span class="p">[</span><span class="s1">&#39;comment_text&#39;</span><span class="p">]</span>
@@ -13781,7 +13770,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">x_train</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13797,7 +13786,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -13819,7 +13808,7 @@ Name: comment_text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">y_train</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13835,13 +13824,13 @@ Name: comment_text, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-d3751252-29aa-45ae-89b9-38c177996d17">
+  <div id="df-60449b2c-b46f-4c71-a3bb-23eb302682d7">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13918,7 +13907,7 @@ Name: comment_text, dtype: object</pre>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d3751252-29aa-45ae-89b9-38c177996d17')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-60449b2c-b46f-4c71-a3bb-23eb302682d7')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13969,12 +13958,12 @@ Name: comment_text, dtype: object</pre>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d3751252-29aa-45ae-89b9-38c177996d17 button.colab-df-convert');
+          document.querySelector('#df-60449b2c-b46f-4c71-a3bb-23eb302682d7 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d3751252-29aa-45ae-89b9-38c177996d17');
+          const element = document.querySelector('#df-60449b2c-b46f-4c71-a3bb-23eb302682d7');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -14023,7 +14012,7 @@ Name: comment_text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
@@ -14054,13 +14043,13 @@ Name: comment_text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">MyModel</span><span class="p">(</span><span class="s2">&quot;https://tfhub.dev/google/nnlm-en-dim128/2&quot;</span><span class="p">)</span>
 <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
     <span class="n">loss</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">losses</span><span class="o">.</span><span class="n">BinaryCrossentropy</span><span class="p">(</span><span class="n">from_logits</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-    <span class="n">optimizer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(),</span> 
+    <span class="n">optimizer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(),</span>
     <span class="n">metrics</span> <span class="o">=</span> <span class="p">[</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">metrics</span><span class="o">.</span><span class="n">BinaryCrossentropy</span><span class="p">()])</span>
 </pre></div>
 
@@ -14071,7 +14060,7 @@ Name: comment_text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y_train</span><span class="p">,</span>
@@ -14116,7 +14105,7 @@ Name: comment_text, dtype: object</pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>3482/3491 [============================&gt;.] - ETA: 0s - loss: 0.1082 - binary_crossentropy: 0.1082</pre>
+<pre>3483/3491 [============================&gt;.] - ETA: 0s - loss: 0.1097 - binary_crossentropy: 0.1097</pre>
 </div>
 </div>
 
@@ -14138,55 +14127,55 @@ Name: comment_text, dtype: object</pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>3491/3491 [==============================] - 15s 4ms/step - loss: 0.1082 - binary_crossentropy: 0.1082 - val_loss: 0.1069 - val_binary_crossentropy: 0.1069
+<pre>3491/3491 [==============================] - 20s 5ms/step - loss: 0.1097 - binary_crossentropy: 0.1097 - val_loss: 0.1006 - val_binary_crossentropy: 0.1006
 Epoch 2/25
-3491/3491 [==============================] - 16s 5ms/step - loss: 0.0967 - binary_crossentropy: 0.0967 - val_loss: 0.0981 - val_binary_crossentropy: 0.0981
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0969 - binary_crossentropy: 0.0969 - val_loss: 0.0937 - val_binary_crossentropy: 0.0937
 Epoch 3/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0953 - binary_crossentropy: 0.0953 - val_loss: 0.0962 - val_binary_crossentropy: 0.0962
+3491/3491 [==============================] - 15s 4ms/step - loss: 0.0953 - binary_crossentropy: 0.0953 - val_loss: 0.0940 - val_binary_crossentropy: 0.0940
 Epoch 4/25
-3491/3491 [==============================] - 17s 5ms/step - loss: 0.0937 - binary_crossentropy: 0.0937 - val_loss: 0.0935 - val_binary_crossentropy: 0.0935
+3491/3491 [==============================] - 15s 4ms/step - loss: 0.0940 - binary_crossentropy: 0.0940 - val_loss: 0.0959 - val_binary_crossentropy: 0.0959
 Epoch 5/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0931 - binary_crossentropy: 0.0931 - val_loss: 0.0935 - val_binary_crossentropy: 0.0935
+3491/3491 [==============================] - 17s 5ms/step - loss: 0.0935 - binary_crossentropy: 0.0935 - val_loss: 0.0936 - val_binary_crossentropy: 0.0936
 Epoch 6/25
-3491/3491 [==============================] - 18s 5ms/step - loss: 0.0931 - binary_crossentropy: 0.0931 - val_loss: 0.0939 - val_binary_crossentropy: 0.0939
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0931 - binary_crossentropy: 0.0931 - val_loss: 0.0958 - val_binary_crossentropy: 0.0958
 Epoch 7/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0925 - binary_crossentropy: 0.0925 - val_loss: 0.0969 - val_binary_crossentropy: 0.0969
+3491/3491 [==============================] - 17s 5ms/step - loss: 0.0931 - binary_crossentropy: 0.0931 - val_loss: 0.0931 - val_binary_crossentropy: 0.0931
 Epoch 8/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0926 - binary_crossentropy: 0.0926 - val_loss: 0.0954 - val_binary_crossentropy: 0.0954
+3491/3491 [==============================] - 15s 4ms/step - loss: 0.0926 - binary_crossentropy: 0.0926 - val_loss: 0.0957 - val_binary_crossentropy: 0.0957
 Epoch 9/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0917 - binary_crossentropy: 0.0917 - val_loss: 0.0957 - val_binary_crossentropy: 0.0957
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0923 - binary_crossentropy: 0.0923 - val_loss: 0.0955 - val_binary_crossentropy: 0.0955
 Epoch 10/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0923 - binary_crossentropy: 0.0923 - val_loss: 0.0938 - val_binary_crossentropy: 0.0938
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0921 - binary_crossentropy: 0.0921 - val_loss: 0.0923 - val_binary_crossentropy: 0.0923
 Epoch 11/25
-3491/3491 [==============================] - 15s 4ms/step - loss: 0.0917 - binary_crossentropy: 0.0917 - val_loss: 0.0944 - val_binary_crossentropy: 0.0944
+3491/3491 [==============================] - 17s 5ms/step - loss: 0.0919 - binary_crossentropy: 0.0919 - val_loss: 0.0923 - val_binary_crossentropy: 0.0923
 Epoch 12/25
-3491/3491 [==============================] - 17s 5ms/step - loss: 0.0919 - binary_crossentropy: 0.0919 - val_loss: 0.0917 - val_binary_crossentropy: 0.0917
+3491/3491 [==============================] - 17s 5ms/step - loss: 0.0914 - binary_crossentropy: 0.0914 - val_loss: 0.0938 - val_binary_crossentropy: 0.0938
 Epoch 13/25
-3491/3491 [==============================] - 16s 4ms/step - loss: 0.0914 - binary_crossentropy: 0.0914 - val_loss: 0.0987 - val_binary_crossentropy: 0.0987
+3491/3491 [==============================] - 17s 5ms/step - loss: 0.0915 - binary_crossentropy: 0.0915 - val_loss: 0.0950 - val_binary_crossentropy: 0.0950
 Epoch 14/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0921 - binary_crossentropy: 0.0921 - val_loss: 0.0934 - val_binary_crossentropy: 0.0934
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0919 - binary_crossentropy: 0.0919 - val_loss: 0.0931 - val_binary_crossentropy: 0.0931
 Epoch 15/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0914 - binary_crossentropy: 0.0914 - val_loss: 0.0939 - val_binary_crossentropy: 0.0939
+3491/3491 [==============================] - 17s 5ms/step - loss: 0.0912 - binary_crossentropy: 0.0912 - val_loss: 0.0954 - val_binary_crossentropy: 0.0954
 Epoch 16/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0910 - binary_crossentropy: 0.0910 - val_loss: 0.0933 - val_binary_crossentropy: 0.0933
+3491/3491 [==============================] - 17s 5ms/step - loss: 0.0915 - binary_crossentropy: 0.0915 - val_loss: 0.0925 - val_binary_crossentropy: 0.0925
 Epoch 17/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0910 - binary_crossentropy: 0.0910 - val_loss: 0.0947 - val_binary_crossentropy: 0.0947
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0916 - binary_crossentropy: 0.0916 - val_loss: 0.0942 - val_binary_crossentropy: 0.0942
 Epoch 18/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0914 - binary_crossentropy: 0.0914 - val_loss: 0.0961 - val_binary_crossentropy: 0.0961
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0912 - binary_crossentropy: 0.0912 - val_loss: 0.0959 - val_binary_crossentropy: 0.0959
 Epoch 19/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0916 - binary_crossentropy: 0.0916 - val_loss: 0.0929 - val_binary_crossentropy: 0.0929
+3491/3491 [==============================] - 17s 5ms/step - loss: 0.0915 - binary_crossentropy: 0.0915 - val_loss: 0.0932 - val_binary_crossentropy: 0.0932
 Epoch 20/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0906 - binary_crossentropy: 0.0906 - val_loss: 0.0950 - val_binary_crossentropy: 0.0950
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0911 - binary_crossentropy: 0.0911 - val_loss: 0.0926 - val_binary_crossentropy: 0.0926
 Epoch 21/25
-3491/3491 [==============================] - 19s 5ms/step - loss: 0.0913 - binary_crossentropy: 0.0913 - val_loss: 0.0968 - val_binary_crossentropy: 0.0968
+3491/3491 [==============================] - 16s 4ms/step - loss: 0.0918 - binary_crossentropy: 0.0918 - val_loss: 0.0938 - val_binary_crossentropy: 0.0938
 Epoch 22/25
-3491/3491 [==============================] - 17s 5ms/step - loss: 0.0914 - binary_crossentropy: 0.0914 - val_loss: 0.0939 - val_binary_crossentropy: 0.0939
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0910 - binary_crossentropy: 0.0910 - val_loss: 0.0941 - val_binary_crossentropy: 0.0941
 Epoch 23/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0906 - binary_crossentropy: 0.0906 - val_loss: 0.0954 - val_binary_crossentropy: 0.0954
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0909 - binary_crossentropy: 0.0909 - val_loss: 0.0927 - val_binary_crossentropy: 0.0927
 Epoch 24/25
-3491/3491 [==============================] - 14s 4ms/step - loss: 0.0913 - binary_crossentropy: 0.0913 - val_loss: 0.0944 - val_binary_crossentropy: 0.0944
+3491/3491 [==============================] - 15s 4ms/step - loss: 0.0908 - binary_crossentropy: 0.0908 - val_loss: 0.0918 - val_binary_crossentropy: 0.0918
 Epoch 25/25
-3491/3491 [==============================] - 15s 4ms/step - loss: 0.0909 - binary_crossentropy: 0.0909 - val_loss: 0.0996 - val_binary_crossentropy: 0.0996
+3491/3491 [==============================] - 14s 4ms/step - loss: 0.0913 - binary_crossentropy: 0.0913 - val_loss: 0.0939 - val_binary_crossentropy: 0.0939
 </pre>
 </div>
 </div>
@@ -14208,7 +14197,84 @@ Epoch 25/25
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">test_df</span><span class="p">[</span><span class="s1">&#39;comment_text&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[25]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;== From RfC == \n\n The title is fine as it is, IMO.&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">test_df</span><span class="p">[</span><span class="s1">&#39;comment_text&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[22]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0         Yo bitch Ja Rule is more succesful then you&#39;ll...
+1         == From RfC == \n\n The title is fine as it is...
+2         &#34; \n\n == Sources == \n\n * Zawe Ashton on Lap...
+3         :If you have a look back at the source, the in...
+4                 I don&#39;t anonymously edit articles at all.
+                                ...                        
+153159    . \n i totally agree, this stuff is nothing bu...
+153160    == Throw from out field to home plate. == \n\n...
+153161    &#34; \n\n == Okinotorishima categories == \n\n I ...
+153162    &#34; \n\n == &#34;&#34;One of the founding nations of the...
+153163    &#34; \n :::Stop already. Your bullshit is not wel...
+Name: comment_text, Length: 153164, dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">y_test</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_df</span><span class="p">[</span><span class="s1">&#39;comment_text&#39;</span><span class="p">])</span>
@@ -14221,7 +14287,52 @@ Epoch 25/25
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">y_test</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[24]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[9.9932635e-01, 2.3970285e-01, 9.8839921e-01, 2.2686779e-02,
+        9.8349077e-01, 3.5265735e-01],
+       [4.0203094e-02, 2.4605960e-02, 4.9449682e-02, 8.7434649e-03,
+        4.0368348e-02, 6.6496730e-03],
+       [1.6446471e-02, 8.3044469e-03, 1.6644359e-02, 4.2854548e-03,
+        9.1138184e-03, 2.0401180e-03],
+       ...,
+       [1.5958250e-03, 3.2114983e-03, 3.7794709e-03, 5.8686733e-04,
+        1.5451610e-03, 9.0268254e-04],
+       [1.8376350e-02, 8.9213252e-04, 6.2696338e-03, 1.0089576e-03,
+        8.1562102e-03, 9.9056959e-03],
+       [3.3477962e-02, 1.8678904e-03, 1.2961894e-02, 1.1110604e-03,
+        1.1900723e-02, 2.8145313e-03]], dtype=float32)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">result_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">y_train</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
@@ -14238,13 +14349,13 @@ Epoch 25/25
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[57]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-523b8db9-28b8-43b4-bb1f-6273c951fc71">
+  <div id="df-7a8ddecd-5e68-4595-94be-94b1dc59f557">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -14275,48 +14386,48 @@ Epoch 25/25
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.998942</td>
-      <td>0.229591</td>
-      <td>0.983831</td>
-      <td>0.009947</td>
-      <td>0.989329</td>
-      <td>0.428279</td>
+      <td>0.999326</td>
+      <td>0.239703</td>
+      <td>0.988399</td>
+      <td>0.022687</td>
+      <td>0.983491</td>
+      <td>0.352657</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0.038248</td>
-      <td>0.013146</td>
-      <td>0.028103</td>
-      <td>0.008645</td>
-      <td>0.030206</td>
-      <td>0.007190</td>
+      <td>0.040203</td>
+      <td>0.024606</td>
+      <td>0.049450</td>
+      <td>0.008743</td>
+      <td>0.040368</td>
+      <td>0.006650</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>0.011644</td>
-      <td>0.002259</td>
-      <td>0.007612</td>
-      <td>0.001744</td>
-      <td>0.006235</td>
-      <td>0.002985</td>
+      <td>0.016446</td>
+      <td>0.008304</td>
+      <td>0.016644</td>
+      <td>0.004285</td>
+      <td>0.009114</td>
+      <td>0.002040</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0.013081</td>
-      <td>0.002037</td>
-      <td>0.009413</td>
-      <td>0.000515</td>
-      <td>0.006207</td>
-      <td>0.002015</td>
+      <td>0.011524</td>
+      <td>0.001230</td>
+      <td>0.006594</td>
+      <td>0.000870</td>
+      <td>0.008534</td>
+      <td>0.002780</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>0.063695</td>
-      <td>0.005966</td>
-      <td>0.035732</td>
-      <td>0.000585</td>
-      <td>0.022075</td>
-      <td>0.001974</td>
+      <td>0.077224</td>
+      <td>0.004752</td>
+      <td>0.028164</td>
+      <td>0.001783</td>
+      <td>0.020256</td>
+      <td>0.003974</td>
     </tr>
     <tr>
       <th>...</th>
@@ -14329,54 +14440,54 @@ Epoch 25/25
     </tr>
     <tr>
       <th>153159</th>
-      <td>0.106794</td>
-      <td>0.007670</td>
-      <td>0.058966</td>
-      <td>0.001189</td>
-      <td>0.031346</td>
-      <td>0.005676</td>
+      <td>0.108599</td>
+      <td>0.011909</td>
+      <td>0.064952</td>
+      <td>0.001921</td>
+      <td>0.049012</td>
+      <td>0.005252</td>
     </tr>
     <tr>
       <th>153160</th>
-      <td>0.032760</td>
-      <td>0.006854</td>
-      <td>0.033844</td>
-      <td>0.005283</td>
-      <td>0.028361</td>
-      <td>0.007192</td>
+      <td>0.070937</td>
+      <td>0.006661</td>
+      <td>0.038952</td>
+      <td>0.005681</td>
+      <td>0.060483</td>
+      <td>0.016679</td>
     </tr>
     <tr>
       <th>153161</th>
-      <td>0.001263</td>
-      <td>0.001433</td>
-      <td>0.002277</td>
-      <td>0.000406</td>
-      <td>0.000322</td>
-      <td>0.000630</td>
+      <td>0.001596</td>
+      <td>0.003211</td>
+      <td>0.003779</td>
+      <td>0.000587</td>
+      <td>0.001545</td>
+      <td>0.000903</td>
     </tr>
     <tr>
       <th>153162</th>
-      <td>0.003620</td>
-      <td>0.001150</td>
-      <td>0.000775</td>
-      <td>0.000287</td>
-      <td>0.001257</td>
-      <td>0.002899</td>
+      <td>0.018376</td>
+      <td>0.000892</td>
+      <td>0.006270</td>
+      <td>0.001009</td>
+      <td>0.008156</td>
+      <td>0.009906</td>
     </tr>
     <tr>
       <th>153163</th>
-      <td>0.015351</td>
-      <td>0.001090</td>
-      <td>0.006834</td>
-      <td>0.001105</td>
-      <td>0.005776</td>
-      <td>0.002906</td>
+      <td>0.033478</td>
+      <td>0.001868</td>
+      <td>0.012962</td>
+      <td>0.001111</td>
+      <td>0.011901</td>
+      <td>0.002815</td>
     </tr>
   </tbody>
 </table>
 <p>153164 rows × 6 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-523b8db9-28b8-43b4-bb1f-6273c951fc71')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7a8ddecd-5e68-4595-94be-94b1dc59f557')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -14427,12 +14538,12 @@ Epoch 25/25
 
       <script>
         const buttonEl =
-          document.querySelector('#df-523b8db9-28b8-43b4-bb1f-6273c951fc71 button.colab-df-convert');
+          document.querySelector('#df-7a8ddecd-5e68-4595-94be-94b1dc59f557 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-523b8db9-28b8-43b4-bb1f-6273c951fc71');
+          const element = document.querySelector('#df-7a8ddecd-5e68-4595-94be-94b1dc59f557');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -14462,7 +14573,51 @@ Epoch 25/25
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">test_df</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[26]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0         00001cee341fdb12
+1         0000247867823ef7
+2         00013b17ad220c46
+3         00017563c3f7919a
+4         00017695ad8997eb
+                ...       
+153159    fffcd0960ee309b5
+153160    fffd7a9a6eb32c16
+153161    fffda9e8d6fafa9e
+153162    fffe8f1340a79fc2
+153163    ffffce3fb183ee80
+Name: id, Length: 153164, dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">result_df</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="n">test_df</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">])</span>
@@ -14475,7 +14630,259 @@ Epoch 25/25
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">result_df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[30]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+  <div id="df-1a7ac7e0-311b-40d1-8ed3-be5082d918a2">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>toxic</th>
+      <th>severe_toxic</th>
+      <th>obscene</th>
+      <th>threat</th>
+      <th>insult</th>
+      <th>identity_hate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>00001cee341fdb12</td>
+      <td>0.999326</td>
+      <td>0.239703</td>
+      <td>0.988399</td>
+      <td>0.022687</td>
+      <td>0.983491</td>
+      <td>0.352657</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0000247867823ef7</td>
+      <td>0.040203</td>
+      <td>0.024606</td>
+      <td>0.049450</td>
+      <td>0.008743</td>
+      <td>0.040368</td>
+      <td>0.006650</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>00013b17ad220c46</td>
+      <td>0.016446</td>
+      <td>0.008304</td>
+      <td>0.016644</td>
+      <td>0.004285</td>
+      <td>0.009114</td>
+      <td>0.002040</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>00017563c3f7919a</td>
+      <td>0.011524</td>
+      <td>0.001230</td>
+      <td>0.006594</td>
+      <td>0.000870</td>
+      <td>0.008534</td>
+      <td>0.002780</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>00017695ad8997eb</td>
+      <td>0.077224</td>
+      <td>0.004752</td>
+      <td>0.028164</td>
+      <td>0.001783</td>
+      <td>0.020256</td>
+      <td>0.003974</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>153159</th>
+      <td>fffcd0960ee309b5</td>
+      <td>0.108599</td>
+      <td>0.011909</td>
+      <td>0.064952</td>
+      <td>0.001921</td>
+      <td>0.049012</td>
+      <td>0.005252</td>
+    </tr>
+    <tr>
+      <th>153160</th>
+      <td>fffd7a9a6eb32c16</td>
+      <td>0.070937</td>
+      <td>0.006661</td>
+      <td>0.038952</td>
+      <td>0.005681</td>
+      <td>0.060483</td>
+      <td>0.016679</td>
+    </tr>
+    <tr>
+      <th>153161</th>
+      <td>fffda9e8d6fafa9e</td>
+      <td>0.001596</td>
+      <td>0.003211</td>
+      <td>0.003779</td>
+      <td>0.000587</td>
+      <td>0.001545</td>
+      <td>0.000903</td>
+    </tr>
+    <tr>
+      <th>153162</th>
+      <td>fffe8f1340a79fc2</td>
+      <td>0.018376</td>
+      <td>0.000892</td>
+      <td>0.006270</td>
+      <td>0.001009</td>
+      <td>0.008156</td>
+      <td>0.009906</td>
+    </tr>
+    <tr>
+      <th>153163</th>
+      <td>ffffce3fb183ee80</td>
+      <td>0.033478</td>
+      <td>0.001868</td>
+      <td>0.012962</td>
+      <td>0.001111</td>
+      <td>0.011901</td>
+      <td>0.002815</td>
+    </tr>
+  </tbody>
+</table>
+<p>153164 rows × 7 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1a7ac7e0-311b-40d1-8ed3-be5082d918a2')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-1a7ac7e0-311b-40d1-8ed3-be5082d918a2 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-1a7ac7e0-311b-40d1-8ed3-be5082d918a2');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">result_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;submission.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -14488,7 +14895,7 @@ Epoch 25/25
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
@@ -14504,7 +14911,7 @@ Epoch 25/25
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[60]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -14521,7 +14928,7 @@ Epoch 25/25
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="s2">&quot;Mother fucker&quot;</span><span class="p">])</span>
@@ -14537,14 +14944,14 @@ Epoch 25/25
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[0.6173009 , 0.07023203, 0.57010865, 0.00285277, 0.6946441 ,
-        0.06705227]], dtype=float32)</pre>
+<pre>array([[0.79559195, 0.10643551, 0.5876882 , 0.0098615 , 0.52826744,
+        0.03464001]], dtype=float32)</pre>
 </div>
 
 </div>
@@ -14555,7 +14962,7 @@ Epoch 25/25
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="s2">&quot;Starting a new AI project there are lots of things to consider, and getting a proof-of-concept going with whatever-bunch-of-tools-you-come-across is, probably, the way to go. But once this phase of the project is over you’ll need to think engineering!&quot;</span><span class="p">])</span>
@@ -14571,14 +14978,14 @@ Epoch 25/25
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[34]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[0.02813804, 0.00168121, 0.0081397 , 0.00053969, 0.00250214,
-        0.00708932]], dtype=float32)</pre>
+<pre>array([[0.00917289, 0.00102201, 0.00524017, 0.0005126 , 0.00504491,
+        0.00389126]], dtype=float32)</pre>
 </div>
 
 </div>
@@ -14590,20 +14997,17 @@ Epoch 25/25
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Save-the-model-and-try-to-load-it-next-time.">Save the model and try to load it next time.<a class="anchor-link" href="#Save-the-model-and-try-to-load-it-next-time.">&#182;</a></h2><p>If you want to use your own model in graphql server, you can convert the model you trained to tensorflow.js. <a href="https://www.tensorflow.org/js/tutorials?hl=zh-tw#convert_pretrained_models_to_tensorflowjs">Document</a></p>
+<h2 id="Save-the-model-and-try-to-load-it-next-time.">Save the model and try to load it next time.<a class="anchor-link" href="#Save-the-model-and-try-to-load-it-next-time.">&#182;</a></h2><p>If you want to use your own model in graphql server, you can convert the model you trained to tensorflow.js.<a href="https://www.tensorflow.org/js/tutorials?hl=zh-tw#convert_pretrained_models_to_tensorflowjs">Document</a></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;my_model.h5&#39;</span><span class="p">)</span>
-
-<span class="c1"># 從 HDF5 檔案中載入模型</span>
-<span class="n">my_model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">load_model</span><span class="p">(</span><span class="s1">&#39;my_model.h5&#39;</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">save_weights</span><span class="p">(</span><span class="s1">&#39;my_model.h5&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
